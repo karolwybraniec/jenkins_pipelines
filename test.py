@@ -16,6 +16,10 @@ def deploy():
     assert 1 == 1
 
 
+def go_to_prod():
+    print("[Step] Go to PROD")
+
+
 if __name__ == '__main__':
     if sys.argv[1] == 'test':
         test()
@@ -23,3 +27,5 @@ if __name__ == '__main__':
         parse()
     elif sys.argv[1] == 'deploy':
         deploy()
+    elif sys.argv[1] == 'go_to_prod':
+        go_to_prod()
